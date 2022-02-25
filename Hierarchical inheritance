@@ -1,0 +1,48 @@
+package com.hierarchical;
+
+class parent 
+{
+	public void animal() 
+	{
+		System.out.println("this is the base class extended from child1 'class parent' ");
+	}
+}
+class child1 extends parent 
+{
+	public void dog ()
+	{
+		System.out.println("this is the child1 whitch inherit the properties of base class ' class child1'");
+	}
+}
+
+class child2 extends parent 
+{
+	public void cat ()
+	{
+		System.out.println("this is the sub class2 which inherit");
+	}
+	public void callall(){
+//			animal();
+//			cat();
+//			
+	}
+}
+
+public class Haierarchical 
+{
+
+	public static void main(String[] args) 
+	{
+	
+		child1 ch1=new child1();
+		ch1.animal();
+		ch1.dog();
+		
+		child2 ch2 = new child2();
+		ch2.animal();
+		ch2.cat();
+	}
+
+}
+
+

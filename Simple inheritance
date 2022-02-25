@@ -1,0 +1,35 @@
+package com.inheritance;
+
+class parent{
+	void car() {
+		System.out.println("this is the 'parent' class inherited from child class");
+		int a=5;
+		int b=6;
+		int c=a+b;
+		System.out.println(c);
+	}
+}
+
+class child extends parent {
+	void bike() {
+		System.out.println("this is the child class " );
+	}
+}
+
+class child1 extends child{
+	void car2(){
+		System.out.println("this is the sub class2 extended from child ");
+	}
+}
+public class Simple_inheritance {
+
+	public static void main(String[] args) {
+		child1 ch=new child1();
+				ch.car();
+				ch.bike();
+				ch.car2();
+				
+				
+	}
+
+}

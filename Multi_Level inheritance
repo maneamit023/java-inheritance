@@ -1,0 +1,52 @@
+package com.mutlilevelinheritance;
+
+class addition
+{
+	public void add (int a, int b)
+	{
+		System.out.println("addition is " + (a+b)) ;
+	}
+}
+
+class substraction extends addition 
+{
+	public void sub(int a,int b)
+	{
+		System.out.println("substratction is "+(a-b));
+
+	}
+}
+
+class multiplication extends substraction
+{
+	public void multi(int a,int b)
+	{
+		System.out.println("multiplication is "+(a*b));
+	}
+}
+class division extends multiplication
+{
+	public void div(int a, int b)
+	{
+		System.out.println("division is "+(a/b));
+	}
+//	public void CallAll() {
+//		add(5,6);	
+//		sub(5,6);
+//		multi(5,6);
+//		div(5,6);
+//	}
+}
+
+class calculations extends division 
+{
+	public static void main(String[] args) 
+	{
+		division dv = new division ();
+//				dv.CallAll();
+		dv.add(10, 10);
+		dv.div(10, 10);
+		dv.multi(10, 10);
+		dv.sub(10, 10);
+	}
+}
